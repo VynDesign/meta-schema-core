@@ -11,11 +11,6 @@
     "test": "node ./node_modules/jest/bin/jest.js",
     "test-ci": "node ./node_modules/jest/bin/jest.js --ci --reporters=default --reporters=jest-junit --coverage --coverageDirectory=test-results/coverage"
   },
-  "jest": {
-    "coverageReporters": [
-      "lcov"
-    ]
-  },
   "jest-junit": {
     "suiteName": "jest tests",
     "outputDirectory": ".",
@@ -24,12 +19,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "assert": "^2.1.0",
     "eslint": "^8.56.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.29.1",
     "jest": "^29.7.0",
     "jest-junit": "^16.0.0",
+    "ts-jest": "^29.1.2",
     "typescript": "^5.3.3"
   }
 }
